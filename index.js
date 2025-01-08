@@ -50,4 +50,58 @@ if(MarkHigherJonh = tinhBMI(MarksWeight,MarksHigher) > tinhBMI(JohnWeight,JohnHi
 }else{
     console.log("John's BIM ("+ tinhBMI(JohnWeight,JohnHigher)+") is higher than Mark's ("+tinhBMI(MarksWeight,MarksHigher)+")!");
 }
+console.log("lesson 3");
 
+var dolphinScore1 = 96
+var dolphinScore2 = 108
+var dolphinScore3 = 89
+
+var KoalasScore1 = 88
+var KoalasScore2= 91
+var KoalasScore3 = 110
+
+function tinhTrungBinh(score1,score2,score3) {
+    return (score1+score2+score3)/3
+}
+
+console.log("Cau 1 voi Data 1");
+var trungBinhCaHeo = tinhTrungBinh(dolphinScore1,dolphinScore2,dolphinScore3)
+var trungBinhGauTui = tinhTrungBinh(KoalasScore1,KoalasScore2,KoalasScore3)
+console.log("Diem Trung Binh Cua Ca Heo: "+trungBinhCaHeo);
+console.log("Diem Trung Binh cua Gau Tui: "+trungBinhGauTui);
+
+
+console.log("Cau 2");
+function soSanhDiemThi(tbDoi1,tbDoi2) {
+    if(flag= tbDoi1>tbDoi2){
+        console.log("Dolphin win");
+    }else{
+        console.log("Koalas win");
+    }
+}
+soSanhDiemThi(trungBinhCaHeo,trungBinhGauTui)
+
+console.log("Cau 3");
+
+if(trungBinhCaHeo>trungBinhGauTui &&trungBinhCaHeo >=100){
+    console.log("Dolphin win");
+}else if(trungBinhCaHeo>trungBinhGauTui &&trungBinhCaHeo <100){
+    console.log("Dolphin win nhung khong nhan phan thuong 1");
+}else if(trungBinhCaHeo<trungBinhGauTui&&trungBinhGauTui>=100){
+    console.log("Koalas Win");
+}else if(trungBinhCaHeo<trungBinhGauTui&&trungBinhGauTui<100){
+    console.log("Koalas win nhung khong nhan phan thuong 1");
+}
+
+console.log("Cau 4");
+if(trungBinhCaHeo>trungBinhGauTui &&trungBinhCaHeo >=100){
+    console.log("Dolphin win");
+}else if(trungBinhCaHeo>trungBinhGauTui &&trungBinhCaHeo <100){
+    console.log("Dolphin win nhung khong nhan phan thuong 1");
+}else if(trungBinhCaHeo<trungBinhGauTui&&trungBinhGauTui>=100){
+    console.log("Koalas Win");
+}else if(trungBinhCaHeo<trungBinhGauTui&&trungBinhGauTui<100){
+    console.log("Koalas win nhung khong nhan phan thuong 1");
+}else if(trungBinhCaHeo==trungBinhGauTui&& trungBinhCaHeo>=100 && trungBinhGauTui >=100){
+    console.log("Hoa");
+}
