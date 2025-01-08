@@ -1,6 +1,6 @@
 console.log("lesson1");
 function tinhBMI(mass,height) {
-    return mass/ (height ** 2);
+    return Math.round((mass/ (height ** 2))*10)/10;
 }
 
 var MarksWeight = 78;
@@ -27,3 +27,27 @@ console.log("BMI for Mark"+ tinhBMI(MarksWeight2,MarksHigher2));
 console.log("BMI for John"+tinhBMI(JohnWeight2,JohnHigher2));
 console.log("Ket Qua Khi So Sanh John va Marks :"+MarkHigherJonh2);
 console.log("lesson2");
+
+function soSanhJohn(BMIJohn,BMIMark) {
+    if(MarkHigherJonh = tinhBMI(MarksWeight,MarksHigher) > tinhBMI(JohnWeight,JohnHigher)){
+        console.log("Mark's BMI is higher than John's!");
+    }else{
+        console.log("Jonn's BMI is higher than Mark's!");
+    }
+}
+console.log("Cau 1");
+var BMIMark = Math.round(tinhBMI(MarksWeight,MarksHigher)*10)/10
+var BMIJohn =Math.round(tinhBMI(JohnWeight,JohnHigher)*10)/10
+console.log("BMI for Mark: "+ BMIMark);
+console.log("BMI for John: "+ BMIJohn);
+
+soSanhJohn(BMIJohn,BMIMark)
+
+console.log("Cau 2");
+if(MarkHigherJonh = tinhBMI(MarksWeight,MarksHigher) > tinhBMI(JohnWeight,JohnHigher)){
+    console.log("Mark's BIM ("+tinhBMI(MarksWeight,MarksHigher)+") is higher than John's ("+ tinhBMI(JohnWeight,JohnHigher)+")!");
+
+}else{
+    console.log("John's BIM ("+ tinhBMI(JohnWeight,JohnHigher)+") is higher than Mark's ("+tinhBMI(MarksWeight,MarksHigher)+")!");
+}
+
