@@ -94,6 +94,7 @@ if(trungBinhCaHeo>trungBinhGauTui &&trungBinhCaHeo >=100){
 }
 
 console.log("Cau 4");
+
 if(trungBinhCaHeo>trungBinhGauTui &&trungBinhCaHeo >=100){
     console.log("Dolphin win");
 }else if(trungBinhCaHeo>trungBinhGauTui &&trungBinhCaHeo <100){
@@ -105,3 +106,18 @@ if(trungBinhCaHeo>trungBinhGauTui &&trungBinhCaHeo >=100){
 }else if(trungBinhCaHeo==trungBinhGauTui&& trungBinhCaHeo>=100 && trungBinhGauTui >=100){
     console.log("Hoa");
 }
+
+console.log("Lesson 4");
+var bills = [275,40,430]
+console.log("Cau 2");
+bills.forEach(function (bill) {
+    
+    var tip = (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.2;
+    let total = bill + tip;
+
+    console.log(
+        "The bill was " + bill +
+        ", the tip was " + tip.toFixed(2) +
+        ", and the total value " + total.toFixed(2)
+    );
+});
